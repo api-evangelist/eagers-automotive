@@ -1,0 +1,21 @@
+name: Eagers Automotive MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+description: >-
+  No official hosted or local MCP server from Eagers Automotive was found, and no OpenAPI contract
+  exists in this repo to derive a candidate tool list from. The pre-flight probe of
+  https://eagersautomotive.com.au/mcp returned HTTP 403, and its control path also returned 403
+  (the whole site serves a bot challenge), so that response proves nothing either way. A web search
+  on 2026-10-21 ("Eagers Automotive" API developer / MCP server / llms.txt) returned no
+  provider-owned result.
+evidence:
+- url: https://eagersautomotive.com.au/mcp
+  status: 403
+  note: opaque - control path also 403 (bot challenge on the whole site)
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched

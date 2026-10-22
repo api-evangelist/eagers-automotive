@@ -1,0 +1,8 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://registry.npmjs.org/-/v1/search?text=eagers%20automotive&size=5
+- https://registry.npmjs.org/eagers-automotive
+- https://pypi.org/pypi/eagers-automotive/json
+note: No first-party SDK or package found. npm search for "eagers automotive" returned only unrelated packages; npm and PyPI exact-name lookups returned 404. No developer docs exist to name an SDK (company site eagersautomotive.com.au answers 403 bot challenge).
+packages: []

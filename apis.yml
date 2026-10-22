@@ -1,23 +1,68 @@
 aid: eagers-automotive
+
 name: Eagers Automotive
-description: 'Eagers Automotive is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Eagers Automotive Limited (ASX: APE), formerly A.P. Eagers Limited (founded 1913, renamed
+  in 2020 after acquiring Automotive Holdings Group), is Australia''s largest automotive retailing group,
+  operating in Australia and New Zealand and, since 2025, Canada via a controlling stake in CanadaOne
+  Auto Group. It sells new and used vehicles and trucks, distributes parts and accessories, services vehicles,
+  and facilitates finance, leasing and extended warranties. Surfaced via the australia-apidays-2026 harvest;
+  no public developer API has been identified.'
+
 url: https://raw.githubusercontent.com/api-evangelist/eagers-automotive/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Automotive
+- Car Dealerships
+- Automotive Retail
+- Australia
+- New Zealand
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/eagers-automotive-hosts.yml
+- type: DomainSecurity
+  url: security/eagers-automotive-domain-security.yml
 - type: Website
   url: https://eagersautomotive.com.au/
+
+apis: []
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: 'The company website eagersautomotive.com.au answered both the pre-flight browser-UA probe and
+    a re-check on 2026-10-21 with HTTP 403 (520-byte challenge page). The Website pointer is kept (a bot
+    challenge is not a dead page). Identity facts come from public secondary sources (Wikipedia, ASX listing
+    data); no developer portal, docs or other link-property pointers could be read or verified. Secondary
+    source located by web search (not probed): https://en.wikipedia.org/wiki/Eagers_Automotive'
+  evidence:
+  - url: https://eagersautomotive.com.au/
+    status: 403
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

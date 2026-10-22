@@ -1,0 +1,18 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/eagers-automotive/integrations
+- https://n8n.io/integrations/eagers-automotive/
+- https://composio.dev/toolkits/eagers-automotive
+- https://monid.ai/tools/eagers-automotive
+checked:
+- https://zapier.com/apps/eagers-automotive/integrations
+- https://n8n.io/integrations/eagers-automotive/
+- https://eagersautomotive.com.au/
+- https://composio.dev/toolkits/eagers-automotive
+- https://monid.ai/tools/eagers-automotive
+summary: No marketplace listing found; the company site is behind a bot challenge and no OpenAPI is held, so no
+  claimed or contract edges could be read.
+marketplace_apps: []
+edges: []
+templates: []
